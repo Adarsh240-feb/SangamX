@@ -19,16 +19,6 @@ export function SectionHeading({
 
   return (
     <div className={`mb-10 md:mb-16 ${isCenter ? "text-center mx-auto max-w-3xl" : "max-w-4xl"} ${className}`}>
-      {tag && (
-        <Reveal direction="up" delay={0.05}>
-          <div className={`flex items-center gap-2 font-mono text-xs font-bold tracking-widest text-indigo-400 uppercase ${isCenter ? "justify-center" : "justify-start"} mb-4`}>
-            <span className="rounded-full bg-white/10 px-3.5 py-1 text-white border border-white/15">
-              {tag}
-            </span>
-          </div>
-        </Reveal>
-      )}
-
       <Reveal direction="up" delay={0.1}>
         <h2 className="section-title text-white font-extrabold tracking-tight">
           {title}

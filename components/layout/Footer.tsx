@@ -45,16 +45,8 @@ export function Footer() {
                 SANGAM<span className="text-indigo-500">X</span>
               </Link>
               <p className="mt-4 text-base text-muted max-w-sm leading-relaxed">
-                Modern freelance digital web studio engineering premium websites, web apps, and interactive products for ambitious brands worldwide.
+                Engineering premium custom websites, web apps, and mobile applications for ambitious brands worldwide.
               </p>
-            </div>
-
-            <div className="mt-8 font-mono text-xs text-white/50 space-y-1">
-              <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span>AVAILABLE FOR Q4/Q1 CLIENT PROJECTS</span>
-              </div>
-              <div>STUDIO TIME: <span className="text-white font-bold">{time || "00:00:00 UTC"}</span></div>
             </div>
           </div>
 
@@ -66,16 +58,22 @@ export function Footer() {
                 <Link href="/" className="hover:text-white transition-colors">HOME</Link>
               </li>
               <li>
-                <Link href="/work" className="hover:text-white transition-colors">SELECTED WORK</Link>
+                <Link href="/#work" className="hover:text-white transition-colors">SELECTED WORK</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-white transition-colors">SERVICES & CAPABILITIES</Link>
+                <Link href="/#services" className="hover:text-white transition-colors">SERVICES & CAPABILITIES</Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-white transition-colors">STUDIO & TEAM</Link>
+                <Link href="/#tech" className="hover:text-white transition-colors">TECH STACK</Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-white transition-colors">START A PROJECT</Link>
+                <Link href="/#about" className="hover:text-white transition-colors">ABOUT SANGAMX</Link>
+              </li>
+              <li>
+                <Link href="/feedback" className="hover:text-white transition-colors">FEEDBACK FORM</Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white transition-colors text-indigo-400 font-bold">START A PROJECT</Link>
               </li>
             </ul>
           </div>
@@ -85,15 +83,15 @@ export function Footer() {
             <h4 className="font-bold tracking-widest text-indigo-400 uppercase mb-6">WHAT WE BUILD</h4>
             <ul className="space-y-3 font-medium text-white/70">
               <li className="flex items-center justify-between">
-                <span>NEXT.JS & REACT WEBSITES</span>
+                <span>WEBSITES & WEB APPS</span>
                 <span className="text-white/30">01</span>
               </li>
               <li className="flex items-center justify-between">
-                <span>FULL-STACK WEB APPS</span>
+                <span>MOBILE APPLICATIONS</span>
                 <span className="text-white/30">02</span>
               </li>
               <li className="flex items-center justify-between">
-                <span>HEADLESS E-COMMERCE</span>
+                <span>FULL-STACK SAAS PLATFORMS</span>
                 <span className="text-white/30">03</span>
               </li>
               <li className="flex items-center justify-between">
@@ -108,7 +106,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Big Studio Watermark with Hover Image Reveal */}
+        {/* Big Watermark with Hover Image Reveal */}
         <div className="py-12 border-b border-white/10 overflow-hidden text-center select-none relative group">
           <HoverWatermarkText />
         </div>
@@ -116,7 +114,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-xs text-white/40">
           <div>
-            &copy; {new Date().getFullYear()} SANGAMX DIGITAL STUDIO. ALL RIGHTS RESERVED.
+            &copy; {new Date().getFullYear()} SANGAMX. ALL RIGHTS RESERVED.
           </div>
           <div className="flex items-center gap-6">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">

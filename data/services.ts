@@ -5,96 +5,96 @@ export const SERVICES: Service[] = [
     id: "web-development",
     number: "01",
     title: "WEBSITE DEVELOPMENT",
-    subtitle: "High-performance marketing & brand platforms",
-    description: "We build bespoke, ultra-fast websites designed to captivate visitors and convert them into clients. Built on Next.js App Router with server-side optimization.",
+    subtitle: "High-performance marketing & brand websites",
+    description: "We build bespoke, ultra-fast websites designed to captivate visitors and convert them into paying clients.",
     features: [
-      "Custom Next.js & React Architecture",
-      "Pixel-perfect Responsive Engineering",
-      "Lighthouse 95+ Speed Performance",
-      "SEO & Metadata Optimization",
-      "CMS Integration (Sanity, Strapi, Contentful)"
+      "Custom Design & Page Layouts",
+      "Perfect Mobile & Desktop Responsiveness",
+      "Ultra-Fast Loading Speed",
+      "Search Engine Optimization (SEO)",
+      "Easy Content Management System"
     ],
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    deliverables: ["Production Codebase", "CMS Admin Panel", "Performance Audit Report", "Deployment Setup"]
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    deliverables: ["Complete Website", "Easy Content Admin", "SEO Configuration", "Domain & Launch Setup"]
   },
   {
     id: "web-applications",
     number: "02",
     title: "WEB APPLICATIONS",
-    subtitle: "Scalable SaaS dashboards & digital tools",
-    description: "From complex web applications to enterprise SaaS dashboards, we engineer robust full-stack software solutions with real-time data flows and intuitive user control.",
+    subtitle: "Custom business dashboards & online tools",
+    description: "From custom customer portals to business management tools, we build easy-to-use software tailored to your workflows.",
     features: [
-      "Full-stack Web App Architecture",
-      "Real-time Data Streaming & WebSockets",
-      "Role-based Access Control (RBAC)",
-      "API Integrations & Custom Gateways",
-      "State Management & Offline Support"
+      "Custom Business Web Applications",
+      "Secure User Login & Roles",
+      "Real-time Data & Notifications",
+      "Integration with Your Favorite Tools",
+      "Mobile-Friendly Dashboard Design"
     ],
-    technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "MongoDB", "Redis"],
-    deliverables: ["Full-Stack Application", "API Specification", "Database Schema", "CI/CD Pipeline"]
+    technologies: ["React", "Next.js", "Node.js", "MongoDB"],
+    deliverables: ["Custom Web App", "User Access Control", "Database Setup", "Training & Support"]
   },
   {
     id: "e-commerce",
     number: "03",
-    title: "E-COMMERCE PLATFORMS",
-    subtitle: "Headless luxury storefronts & digital boutiques",
-    description: "High-converting online store experiences tailored for ambitious DTC brands. Blending luxury editorial storytelling with instant edge checkout mechanics.",
+    title: "ONLINE STORES & E-COMMERCE",
+    subtitle: "High-converting online store experiences",
+    description: "High-converting online store experiences designed for growing brands. Fast product browsing and seamless checkout.",
     features: [
-      "Headless Shopify & Custom Storefronts",
-      "Sub-second Product Page Loading",
-      "Custom Product Configurator / 3D Preview",
-      "Global Multi-currency & Localization",
-      "Optimized Instant Mobile Checkout"
+      "Custom Storefront Design",
+      "Fast Product Page Loading",
+      "Mobile-Optimized Shopping Cart",
+      "Secure Payment Gateways (Stripe/PayPal)",
+      "Inventory & Order Management"
     ],
-    technologies: ["Shopify Storefront API", "Next.js", "GraphQL", "Tailwind CSS", "Stripe"],
-    deliverables: ["Headless Storefront", "Custom Checkout Flows", "Product Catalog Migration", "Analytics Integration"]
+    technologies: ["Shopify", "Next.js", "Tailwind CSS", "Stripe"],
+    deliverables: ["Online Store Setup", "Payment Gateway Integration", "Product Catalog Setup", "Store Training"]
   },
   {
     id: "ui-ux-design",
     number: "04",
-    title: "UI / UX DESIGN",
-    subtitle: "Design systems & product architecture",
-    description: "Visual identity systems and user experience design that make complex software feel natural, effortless, and premium.",
+    title: "UI / UX & BRAND DESIGN",
+    subtitle: "Visual design & customer user experience",
+    description: "Visual designs and intuitive layouts that make your business look premium, professional, and memorable.",
     features: [
-      "Brand Identity & Visual Guidelines",
-      "Figma Design Systems & Token Libraries",
-      "Interactive High-Fidelity Prototypes",
-      "User Flow & Information Architecture",
-      "Micro-interaction & Animation Specs"
+      "Brand Identity & Visual Style",
+      "Custom Website Page Designs",
+      "Interactive Page Prototypes",
+      "User-Friendly Navigation Layouts",
+      "Mobile App & Web Visuals"
     ],
-    technologies: ["Figma", "Design Tokens", "Prototyping", "Swiss Grid Systems"],
-    deliverables: ["Figma Design System", "Component Library", "Interactive Prototype", "Developer Handoff Package"]
+    technologies: ["Figma", "Design Systems", "Prototyping"],
+    deliverables: ["Figma Design Files", "Brand Visual Guidelines", "Clickable Prototype", "Ready for Launch"]
   },
   {
     id: "interactive-experiences",
     number: "05",
     title: "INTERACTIVE EXPERIENCES",
-    subtitle: "Motion graphics, CSS shaders & WebGL",
-    description: "Interactive brand moments that elevate web experiences into memorable digital art. Scroll-driven animations, 3D elements, and micro-interactions.",
+    subtitle: "Engaging animations & visual effects",
+    description: "Interactive brand moments that elevate your website. Smooth scroll animations, subtle 3D elements, and micro-interactions.",
     features: [
-      "Scroll-driven Storytelling",
-      "Subtle Canvas & WebGL Shaders",
-      "Custom Cursor & Hover Interactions",
-      "Physics & Motion Simulations",
-      "Interactive Product Launch Sites"
+      "Smooth Scroll Animations",
+      "Interactive Product Displays",
+      "Custom Hover & Visual Effects",
+      "Engaging Brand Storytelling",
+      "High-Impact Landing Pages"
     ],
-    technologies: ["GSAP", "ScrollTrigger", "Framer Motion", "Three.js (Subtle)", "CSS Shaders"],
-    deliverables: ["Interactive Landing Page", "Custom Animation Modules", "Cross-browser Polish"]
+    technologies: ["Framer Motion", "GSAP", "Three.js"],
+    deliverables: ["Interactive Landing Page", "Custom Animation Modules", "Cross-Device Quality Polish"]
   },
   {
     id: "maintenance-support",
     number: "06",
-    title: "MAINTENANCE & SUPPORT",
-    subtitle: "Ongoing optimization, updates & security",
-    description: "Continuous care for your digital platform to keep it fast, secure, up to date, and evolving alongside your growing business.",
+    title: "CARE & SUPPORT",
+    subtitle: "Ongoing updates, security & optimization",
+    description: "Continuous care for your website to keep it fast, secure, up-to-date, and growing alongside your business.",
     features: [
-      "Monthly Security & Dependency Audits",
-      "Continuous Performance Tuning",
-      "New Feature & Component Sprints",
-      "24/7 Uptime & Monitoring",
-      "Dedicated Developer Slack Channel"
+      "Monthly Security & Speed Checks",
+      "Regular Content Updates",
+      "New Feature & Page Additions",
+      "99.9% Website Uptime Monitoring",
+      "Direct Support Channel"
     ],
-    technologies: ["Vercel", "AWS", "GitHub Actions", "Sentry", "Lighthouse"],
-    deliverables: ["Monthly Health Reports", "Priority Support SLA", "Ongoing Feature Upgrades"]
+    technologies: ["Vercel", "Security Audits", "Uptime Monitoring"],
+    deliverables: ["Monthly Health Reports", "Priority Support", "Ongoing Website Improvements"]
   }
 ];

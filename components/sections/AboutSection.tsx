@@ -6,41 +6,41 @@ import { MagneticButton } from "../ui/MagneticButton";
 
 export function AboutSection() {
   const pillars = [
-    { title: "DESIGN", desc: "Swiss grid precision, bespoke typography, and editorial visual direction." },
-    { title: "ENGINEERING", desc: "Next.js App Router, TypeScript, sub-50ms performance, and strict code standards." },
-    { title: "STRATEGY", desc: "Conversion psychology, user intent mapping, and measurable business growth." },
-    { title: "CREATIVITY", desc: "Subtle motion graphics, interactive canvas elements, and tactile UI details." },
+    { title: "DESIGN", desc: "Modern visual aesthetics, custom layouts, and clean typography tailored to your brand." },
+    { title: "PERFORMANCE", desc: "Ultra-fast website loading, smooth mobile experience, and reliable security." },
+    { title: "STRATEGY", desc: "Smart user flows and clear messaging designed to convert visitors into customers." },
+    { title: "EXPERIENCE", desc: "Engaging interactive details and motion graphics that leave a lasting impression." },
   ];
 
   return (
-    <section className="relative py-24 md:py-36 bg-[#090A0F]">
+    <section id="about" className="relative py-24 md:py-36 bg-[#090A0F]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Editorial Narrative */}
           <div className="lg:col-span-6">
             <SectionHeading
-              tag="THE STUDIO"
-              title="SMALL TEAM. BIG DIGITAL EXPERIENCES."
+              tag="ABOUT US"
+              title="DEDICATED DIGITAL STUDIO FOR YOUR BRAND."
               className="mb-6"
             />
 
             <Reveal direction="up" delay={0.2}>
               <p className="text-base md:text-lg text-muted leading-relaxed mb-6 font-normal">
-                SangamX operates as an agile, high-caliber freelance web studio. Unlike traditional bloated agencies with excessive overhead and account managers, you work directly with elite frontend engineers and UI designers.
+                SangamX is a dedicated digital studio engineering high-performance websites, custom web applications, and mobile apps. You work directly with senior designers and developers committed to turning your vision into a scalable product.
               </p>
               <p className="text-base md:text-lg text-muted leading-relaxed mb-8 font-normal">
-                We take on a selective number of client partnerships per quarter to ensure uncompromised code quality, hyper-responsive communication, and pixel-perfect execution.
+                We take on a limited number of clients per quarter to ensure personal attention, fast communication, and top-tier quality for every project.
               </p>
             </Reveal>
 
             <Reveal direction="up" delay={0.3}>
               <MagneticButton dataCursor="ABOUT">
                 <Link
-                  href="/about"
+                  href="/contact"
                   className="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-white/5 hover:bg-white/10 text-white border border-white/15 font-mono text-xs font-bold tracking-widest uppercase transition-colors"
                 >
-                  <span>LEARN MORE ABOUT SANGAMX</span>
+                  <span>START A PROJECT WITH US</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
               </MagneticButton>

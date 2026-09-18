@@ -30,7 +30,7 @@ export function StatementSection() {
 
         <Reveal direction="up" delay={0.25}>
           <p className="mt-8 md:mt-12 text-muted text-base md:text-xl font-normal max-w-2xl mx-auto leading-relaxed">
-            Every pixel, line of code, and micro-interaction is intentionally designed to deliver quantifiable speed, aesthetic authority, and business growth.
+            Every detail is thoughtfully crafted to deliver high speed, stunning visual appeal, and real business growth.
           </p>
         </Reveal>
       </div>

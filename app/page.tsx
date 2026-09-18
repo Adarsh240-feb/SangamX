@@ -2,7 +2,6 @@
 
 import dynamic from "next/dynamic";
 import { Hero } from "@/components/hero/Hero";
-import { Marquee } from "@/components/sections/Marquee";
 
 // Lazy-load below-fold sections for faster initial page load
 const SelectedWork = dynamic(
@@ -42,7 +41,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Marquee />
       <SelectedWork />
       <StatementSection />
       <Services />

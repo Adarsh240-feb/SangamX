@@ -8,10 +8,11 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { MagneticButton } from "../ui/MagneticButton";
 
 const navLinks = [
-  { href: "/work", label: "WORK" },
-  { href: "/services", label: "SERVICES" },
-  { href: "/about", label: "ABOUT" },
-  { href: "/contact", label: "CONTACT" },
+  { href: "/#work", label: "WORK" },
+  { href: "/#services", label: "SERVICES" },
+  { href: "/#tech", label: "TECH" },
+  { href: "/#about", label: "ABOUT" },
+  { href: "/feedback", label: "FEEDBACK" },
 ];
 
 export function Navbar() {
@@ -62,9 +63,6 @@ export function Navbar() {
           >
             <span>SANGAM</span>
             <span className="text-indigo-500 group-hover:rotate-12 transition-transform duration-300">X</span>
-            <span className="hidden sm:inline-block font-mono text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-white/10 text-indigo-300 border border-indigo-500/20 ml-1">
-              STUDIO
-            </span>
           </Link>
 
           {/* Desktop Nav Items */}
@@ -162,7 +160,7 @@ export function Navbar() {
                 <ArrowUpRight className="w-5 h-5" />
               </Link>
               <div className="flex justify-between items-center text-xs font-mono text-white/50 pt-4">
-                <span>SANGAMX DIGITAL STUDIO</span>
+                <span>SANGAMX</span>
                 <span>GLOBAL / REMOTE</span>
               </div>
             </motion.div>

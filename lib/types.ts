@@ -50,7 +50,7 @@ export interface Testimonial {
 
 export interface TechItem {
   name: string;
-  category: "Frontend" | "Backend & DB" | "Animation & WebGL" | "Design & Strategy";
+  category: "Design & Web" | "Visuals & Animation" | "Speed & Cloud" | "Frontend" | "Backend & DB" | "Animation & WebGL" | "Design & Strategy";
   description: string;
   iconName: string;
   featured?: boolean;

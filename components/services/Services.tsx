@@ -5,7 +5,7 @@ import { Reveal } from "../ui/Reveal";
 
 export function Services() {
   return (
-    <section className="relative py-24 md:py-36 bg-[#090A0F]">
+    <section id="services" className="relative py-24 md:py-36 bg-[#090A0F]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           tag="CORE CAPABILITIES"

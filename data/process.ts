@@ -4,49 +4,49 @@ export const PROCESS_STEPS: ProcessStep[] = [
   {
     number: "01",
     title: "DISCOVER",
-    subtitle: "Strategy, Research & Architecture",
-    description: "We dive deep into your business objectives, target audience, competitive landscape, and key performance metrics to establish a clear architectural roadmap.",
+    subtitle: "Strategy, Research & Planning",
+    description: "We learn about your business goals, target customers, and market to build a clear roadmap for your project.",
     details: [
-      "Stakeholder Workshops & Goal Alignment",
-      "User Persona & Flow Mapping",
-      "Technical Feasibility & Stack Selection",
-      "Scope & Timeline Milestone Definition"
+      "Understanding Your Business Goals",
+      "Customer & Competitor Analysis",
+      "Project Roadmap & Timeline Planning",
+      "Scope & Milestone Definitions"
     ]
   },
   {
     number: "02",
     title: "DESIGN",
-    subtitle: "Visual Identity & Interactive Prototypes",
-    description: "We translate your brand vision into an editorial visual identity system, crafting high-fidelity interface screens and interactive motion prototypes.",
+    subtitle: "Visual Identity & Page Layouts",
+    description: "We turn your brand vision into stunning web designs with custom layouts, colors, and interactive previews.",
     details: [
-      "Swiss-grid Layout & Typography Systems",
-      "Figma Component Token Architecture",
-      "High-fidelity Interactive Prototypes",
-      "Micro-interaction & Animation Guidelines"
+      "Custom Brand & Typography Direction",
+      "Responsive Layout Designs for Mobile & Desktop",
+      "Interactive Page Prototypes",
+      "Visual & Motion Design Guidelines"
     ]
   },
   {
     number: "03",
     title: "DEVELOP",
-    subtitle: "Precision Engineering & Motion",
-    description: "We bring designs to life using modern Next.js App Router, TypeScript, and clean CSS modules. Built for sub-second page loads and zero layout shifts.",
+    subtitle: "Fast & Reliable Building",
+    description: "We build your website using modern, secure tools engineered for lightning-fast speeds and smooth performance.",
     details: [
-      "Clean Server Component Architecture",
-      "Responsive CSS Grid & Container Queries",
-      "Fluid Motion & Scroll Trigger Animations",
-      "CMS & Third-Party API Integration"
+      "Clean & Optimized Development",
+      "Fully Mobile-Responsive Layouts",
+      "Smooth Animations & Interactions",
+      "Easy-to-use Content Management"
     ]
   },
   {
     number: "04",
     title: "LAUNCH",
-    subtitle: "Testing, Optimization & Handoff",
-    description: "We rigorously test across devices, conduct Lighthouse performance audits, refine SEO configurations, and deploy smoothly to production environments.",
+    subtitle: "Testing, Optimization & Handover",
+    description: "We thoroughly test your website across all mobile phones, tablets, and browsers before launching seamlessly.",
     details: [
-      "Cross-browser & Mobile Device QA",
-      "SEO, Open Graph & Accessibility Audits",
-      "CI/CD Pipeline & Vercel Deployment",
-      "Client Training & Documentation Handoff"
+      "Comprehensive Testing Across All Devices",
+      "Search Engine Optimization (SEO) Prep",
+      "Fast & Secure Cloud Hosting Setup",
+      "Client Training & Easy Project Handover"
     ]
   }
 ];

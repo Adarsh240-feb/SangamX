@@ -150,8 +150,4 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   will-change: transform;
 }
 
-/* Section containment for layout isolation */
-section {
-  contain: layout style;
-}
 
