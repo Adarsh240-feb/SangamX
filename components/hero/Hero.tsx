@@ -130,7 +130,7 @@ export function Hero() {
           <motion.div variants={itemUpVariants} className="flex flex-wrap items-center justify-center gap-4 pt-2">
             <MagneticButton dataCursor="WORK">
               <Link
-                href="/work"
+                href="#work"
                 className="px-8 py-4 rounded-full bg-white text-black font-mono text-xs font-extrabold tracking-widest uppercase hover:bg-neutral-200 transition-colors flex items-center gap-2 shadow-xl shadow-white/10"
               >
                 <span>EXPLORE WORK</span>
@@ -140,7 +140,7 @@ export function Hero() {
 
             <MagneticButton dataCursor="SERVICES">
               <Link
-                href="/services"
+                href="#services"
                 className="px-8 py-4 rounded-full bg-white/5 hover:bg-white/10 text-white border border-white/15 font-mono text-xs font-extrabold tracking-widest uppercase transition-colors flex items-center gap-2 backdrop-blur-md"
               >
                 <span>OUR SERVICES</span>

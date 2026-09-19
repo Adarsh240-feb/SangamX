@@ -32,11 +32,12 @@ export function CustomCursor() {
       dotRef.current.style.transform = `translate3d(${dotPos.current.x - dotOffset}px, ${dotPos.current.y - dotOffset}px, 0)`;
       dotRef.current.style.width = `${dotSize}px`;
       dotRef.current.style.height = `${dotSize}px`;
+      dotRef.current.style.opacity = isVisible.current ? "1" : "0";
     }
 
     if (ringRef.current) {
       const ringScale = hovered ? 1.6 : 1;
-      const ringOpacity = hovered ? 0 : 0.6;
+      const ringOpacity = isVisible.current ? (hovered ? 0 : 0.6) : 0;
       ringRef.current.style.transform = `translate3d(${ringPos.current.x - 20}px, ${ringPos.current.y - 20}px, 0) scale(${ringScale})`;
       ringRef.current.style.opacity = `${ringOpacity}`;
     }
