@@ -1,31 +1,44 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle2, MessageSquare, Send, Star } from "lucide-react";
+import { CheckCircle2, MessageSquare, Send, Star, AlertCircle } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
+import { addFeedbackSubmission } from "@/lib/firebase";
+import { FeedbackList } from "@/components/feedback/FeedbackList";
+
+const initialFeedbackState = {
+  name: "",
+  email: "",
+  company: "",
+  rating: 5,
+  category: "General Experience",
+  feedback: "",
+};
 
 export default function FeedbackPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    rating: 5,
-    category: "General Experience",
-    feedback: "",
-  });
+  const [formData, setFormData] = useState(initialFeedbackState);
 
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setErrorMessage("");
 
-    setTimeout(() => {
+    try {
+      // Save feedback to Firebase Firestore
+      await addFeedbackSubmission(formData);
       setLoading(false);
       setSubmitted(true);
-    }, 600);
+      setFormData(initialFeedbackState);
+    } catch (err: any) {
+      console.error("Failed to submit feedback:", err);
+      setErrorMessage("Could not save feedback. Please try again.");
+      setLoading(false);
+    }
   };
 
   return (
@@ -53,7 +66,10 @@ export default function FeedbackPage() {
                     Your insights help us elevate the design and performance standards for all future builds.
                   </p>
                   <button
-                    onClick={() => setSubmitted(false)}
+                    onClick={() => {
+                      setFormData(initialFeedbackState);
+                      setSubmitted(false);
+                    }}
                     className="mt-6 px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-mono text-xs font-bold uppercase transition-colors"
                   >
                     SUBMIT ANOTHER RESPONSE
@@ -61,7 +77,13 @@ export default function FeedbackPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-8">
-                  
+                  {errorMessage && (
+                    <div className="p-4 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-400 font-mono text-xs flex items-center gap-2">
+                      <AlertCircle className="w-4 h-4 shrink-0" />
+                      <span>{errorMessage}</span>
+                    </div>
+                  )}
+
                   {/* Rating Selector */}
                   <div className="space-y-3 text-center">
                     <label className="block font-mono text-xs font-bold text-white/80 uppercase">
@@ -172,6 +194,9 @@ export default function FeedbackPage() {
             </div>
           </Reveal>
         </div>
+
+        {/* Real-time Dynamic Feedback List */}
+        <FeedbackList />
 
       </div>
     </div>

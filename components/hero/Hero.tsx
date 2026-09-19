@@ -1,38 +1,71 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
 import { HeroBackground } from "./HeroBackground";
 import { MagneticButton } from "../ui/MagneticButton";
 
-// Framer Motion Staggered Variants for Motion Assembly
-const containerVariants = {
+// Framer Motion Staggered Container for 3D Word Assembly
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.12,
-      delayChildren: 0.1,
+      staggerChildren: 0.08,
+      delayChildren: 0.15,
     },
   },
 };
 
-const itemUpVariants = {
-  hidden: { opacity: 0, y: 40, scale: 0.95 },
+// 3D "Thrown in Perspective" Spring Variant for each word
+const word3DVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 90,
+    z: -400,
+    rotateX: -70,
+    rotateY: 25,
+    rotateZ: -10,
+    scale: 0.4,
+    filter: "blur(12px)",
+  },
   visible: {
     opacity: 1,
     y: 0,
+    z: 0,
+    rotateX: 0,
+    rotateY: 0,
+    rotateZ: 0,
     scale: 1,
+    filter: "blur(0px)",
     transition: {
-      type: "spring" as const,
+      type: "spring",
+      stiffness: 140,
+      damping: 14,
+      mass: 0.8,
+    },
+  },
+};
+
+const itemUpVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
       stiffness: 100,
       damping: 18,
+      delay: 0.8,
     },
   },
 };
 
 export function Hero() {
+  const line1 = ["WE", "BUILD", "WEBSITES", "&"];
+  const line3 = ["THAT", "TRANSFORM", "BRANDS."];
+
   return (
     <section className="relative min-h-[92vh] md:min-h-screen pt-24 md:pt-32 pb-16 flex flex-col justify-center overflow-hidden">
       <HeroBackground />
@@ -43,18 +76,48 @@ export function Hero() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col items-center text-center max-w-4xl mx-auto space-y-8"
+          className="flex flex-col items-center text-center max-w-5xl mx-auto space-y-8"
         >
-          {/* Main Headline */}
-          <motion.div variants={itemUpVariants} className="relative w-full">
-            <h1 className="font-extrabold tracking-tight text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl uppercase leading-[1.05]">
-              WE BUILD WEBSITES & <br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-amber-200 to-indigo-300 italic font-serif lowercase font-normal">
-                applications
-              </span> <br />
-              THAT TRANSFORM BRANDS.
+          {/* Main 3D Thrown Headline Container */}
+          <div className="relative w-full [perspective:1200px] [transform-style:preserve-3d]">
+            <h1 className="font-extrabold tracking-tight text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl uppercase leading-[1.05] select-none">
+              {/* Line 1 Words */}
+              <div className="flex flex-wrap justify-center gap-x-3 sm:gap-x-5 md:gap-x-6 [transform-style:preserve-3d]">
+                {line1.map((word, idx) => (
+                  <motion.span
+                    key={`line1-${idx}`}
+                    variants={word3DVariants}
+                    className="inline-block origin-bottom transition-colors hover:text-indigo-400 [transform-style:preserve-3d]"
+                  >
+                    {word}
+                  </motion.span>
+                ))}
+              </div>
+
+              {/* Line 2 Word (Applications - Italic Gradient) */}
+              <div className="my-1 sm:my-2 [transform-style:preserve-3d]">
+                <motion.span
+                  variants={word3DVariants}
+                  className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-amber-200 to-indigo-300 italic font-serif lowercase font-normal drop-shadow-[0_10px_20px_rgba(249,115,22,0.2)] [transform-style:preserve-3d]"
+                >
+                  applications
+                </motion.span>
+              </div>
+
+              {/* Line 3 Words */}
+              <div className="flex flex-wrap justify-center gap-x-3 sm:gap-x-5 md:gap-x-6 [transform-style:preserve-3d]">
+                {line3.map((word, idx) => (
+                  <motion.span
+                    key={`line3-${idx}`}
+                    variants={word3DVariants}
+                    className="inline-block origin-bottom transition-colors hover:text-orange-400 [transform-style:preserve-3d]"
+                  >
+                    {word}
+                  </motion.span>
+                ))}
+              </div>
             </h1>
-          </motion.div>
+          </div>
 
           {/* Subtitle */}
           <motion.div variants={itemUpVariants}>

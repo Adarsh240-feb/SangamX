@@ -55,3 +55,27 @@ export interface TechItem {
   iconName: string;
   featured?: boolean;
 }
+
+export interface ContactSubmission {
+  id?: string;
+  name: string;
+  email: string;
+  phone?: string;
+  company?: string;
+  projectType: string;
+  budget: string;
+  message: string;
+  createdAt?: string;
+}
+
+export interface FeedbackSubmission {
+  id?: string;
+  name: string;
+  email: string;
+  company?: string;
+  rating: number;
+  category?: string;
+  feedback: string;
+  createdAt?: string;
+}
+

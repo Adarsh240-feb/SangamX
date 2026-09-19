@@ -19,30 +19,30 @@ const fontMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SangamX — Premium Digital Web Studio & Engineering Agency",
-  description: "SangamX designs and engineers ultra-fast websites, web applications, e-commerce platforms, and interactive digital products for ambitious brands globally.",
+  title: "SangamX — Developer Group & Software Engineering Agency",
+  description: "SangamX is a collective group of developers designing and engineering ultra-fast websites, web applications, e-commerce platforms, and mobile apps in ₹ Rupees.",
   keywords: [
     "SangamX",
-    "Digital Web Studio",
-    "Freelance Next.js Developer",
-    "Creative Web Agency",
-    "High Converting Website Design",
-    "Headless Shopify E-commerce",
-    "Swiss Grid UI/UX Design"
+    "Developer Collective",
+    "Group of Developers",
+    "Full Stack Developers",
+    "Next.js App Router",
+    "Web Development India",
+    "Custom Web Apps"
   ],
-  authors: [{ name: "SangamX Digital Studio" }],
+  authors: [{ name: "SangamX Developer Team" }],
   openGraph: {
-    title: "SangamX — Premium Digital Web Studio & Engineering Agency",
-    description: "SangamX designs and engineers ultra-fast websites, web applications, and digital products for ambitious brands globally.",
+    title: "SangamX — Developer Group & Software Engineering Agency",
+    description: "SangamX is a collective group of developers designing and engineering ultra-fast websites, web applications, and mobile apps.",
     url: "https://sangamx.com",
-    siteName: "SangamX Digital Studio",
+    siteName: "SangamX Studio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SangamX — Premium Digital Web Studio & Engineering Agency",
-    description: "SangamX designs and engineers ultra-fast websites, web applications, and digital products for ambitious brands globally.",
+    title: "SangamX — Developer Group & Software Engineering Agency",
+    description: "SangamX is a collective group of developers designing and engineering ultra-fast websites, web applications, and mobile apps.",
     creator: "@sangamx",
   },
   robots: {
@@ -59,11 +59,11 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "SangamX Digital Studio",
+    "name": "SangamX Developer Collective",
     "url": "https://sangamx.com",
     "logo": "https://sangamx.com/sangam.jpg",
-    "description": "Boutique freelance digital agency crafting high-performance websites, web applications, and e-commerce platforms.",
-    "priceRange": "$$$$",
+    "description": "Collective group of software developers crafting high-performance websites, custom web applications, and mobile apps.",
+    "priceRange": "₹₹₹",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "Global Remote"

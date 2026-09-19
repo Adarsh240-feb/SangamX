@@ -21,16 +21,16 @@ export function AboutSection() {
           <div className="lg:col-span-6">
             <SectionHeading
               tag="ABOUT US"
-              title="DEDICATED DIGITAL STUDIO FOR YOUR BRAND."
+              title="A COLLECTIVE GROUP OF DEVELOPERS."
               className="mb-6"
             />
 
             <Reveal direction="up" delay={0.2}>
               <p className="text-base md:text-lg text-muted leading-relaxed mb-6 font-normal">
-                SangamX is a dedicated digital studio engineering high-performance websites, custom web applications, and mobile apps. You work directly with senior designers and developers committed to turning your vision into a scalable product.
+                SangamX is a group of passionate developers & software engineers engineering high-performance websites, custom web applications, and mobile apps. We work transparently in ₹ Rupees (INR).
               </p>
               <p className="text-base md:text-lg text-muted leading-relaxed mb-8 font-normal">
-                We take on a limited number of clients per quarter to ensure personal attention, fast communication, and top-tier quality for every project.
+                You work directly with senior developers committed to turning your vision into a scalable product with fast communication and top-tier code quality.
               </p>
             </Reveal>
 

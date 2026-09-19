@@ -3,8 +3,6 @@ import { ProjectGrid } from "./ProjectGrid";
 import { PROJECTS } from "@/data/projects";
 
 export function SelectedWork() {
-  const featuredProjects = PROJECTS.slice(0, 4);
-
   return (
     <section id="work" className="relative py-24 md:py-36 bg-[#090A0F]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -16,7 +14,7 @@ export function SelectedWork() {
           />
         </div>
 
-        <ProjectGrid projects={featuredProjects} />
+        <ProjectGrid projects={PROJECTS} />
       </div>
     </section>
   );

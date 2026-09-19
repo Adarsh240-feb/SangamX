@@ -116,19 +116,10 @@ export function Footer() {
           <div>
             &copy; {new Date().getFullYear()} SANGAMX. ALL RIGHTS RESERVED.
           </div>
-          <div className="flex items-center gap-6">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
-              <span>GITHUB</span>
-              <ArrowUpRight className="w-3 h-3" />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
-              <span>TWITTER / X</span>
-              <ArrowUpRight className="w-3 h-3" />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
-              <span>LINKEDIN</span>
-              <ArrowUpRight className="w-3 h-3" />
-            </a>
+          <div className="flex items-center gap-2 font-mono text-xs text-white/70">
+            <span>Made with</span>
+            <span className="text-red-500 animate-pulse text-sm">❤️</span>
+            <span>by SangamX team</span>
           </div>
         </div>
       </div>
